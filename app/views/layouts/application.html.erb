@@ -7,10 +7,26 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
   </head>
 
   <body>
-    <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
+    <div class=transparency> 
+      <p class="flash"><%= flash.notice %></p>
+    </div>
+    <div id="container">
+      <div id="content">
+        <%= yield %>
+        <hr>
+        <h6>
+          <% if logged_in? %>
+            <%= "Logged in as #{current_user.email}" %>
+            <%= link_to "(logout)", logout_path %>  
+	  <% else %>
+            <%= link_to "(login)", login_path %>  
+          <% end %>
+        </h6>
+      </div>
+    </div>
   </body>
 </html>

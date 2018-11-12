@@ -4,11 +4,13 @@
   <%= image_tag @article.image.url %><br/>
 <% end %>
 </p>
-<p><%= @article.body %></p>
-<%= link_to "Edit article", edit_article_path(@article) %>
-<br>
-<%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
-<br>
+<% if logged_in? %>
+	<p><%= @article.body %></p>
+	<%= link_to "Edit article", edit_article_path(@article) %>
+	<br>
+	<%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
+	<br>
+<% end %>
 <p>
   Tags:
   <% @article.tags.each do |tag| %>

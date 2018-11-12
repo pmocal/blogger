@@ -1,18 +1,22 @@
 $primary_color: #AAA;
 
-body {
-  background-color: $primary_color;
+html {
+  background: linear-gradient(to bottom, #33ccff 0%, #3366cc 100%);
   font: {
     family: Verdana, Helvetica, Arial;
     size: 14px;
   }
+  min-height: 100%;
 }
 
 a {
-  color: #0000FF;
-  img {
-    border: none;
-  }
+  color: black;
+}
+
+img {
+  border: solid;
+  border-width: 5px;
+  border-color: #003366;
 }
 
 .clear {
@@ -33,4 +37,12 @@ a {
 #content {
   clear: both;
   padding-top: 20px;
+}
+
+h1 {
+  color: #0000A0;
+}
+
+li {
+  color: purple;
 }
