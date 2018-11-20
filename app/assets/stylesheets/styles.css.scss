@@ -1,48 +1,85 @@
-$primary_color: #AAA;
-
 html {
-  background: linear-gradient(to bottom, #33ccff 0%, #3366cc 100%);
-  font: {
-    family: Verdana, Helvetica, Arial;
-    size: 14px;
-  }
-  min-height: 100%;
+  background: url(http://visionarism.com/images/IMG_2764.jpg);
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  height: 92%;
 }
 
-a {
+body {
+  height: 93%;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li p {
+  padding: 0px 5px;
+}
+
+.navbar li a {
+  font-family: 'Shrikhand', cursive;
+  text-shadow: #FC0 1px 0 10px;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ECD8D4;
+}
+
+.navbar .login {
+  float: right;
   color: black;
+}
+
+a:link {
+  color: green;
 }
 
 img {
   border: solid;
-  border-width: 5px;
-  border-color: #003366;
+  border-width: 1px;
 }
 
-.clear {
-  clear: both;
-  height: 0;
-  overflow: hidden;
+#logo {
+  font-family: 'Shrikhand', cursive;
+  text-shadow: #FC0 1px 0 10px;
+  margin: 14px 0 14px 20px;
+  font-size: 40px;
 }
 
 #container {
   width: 75%;
-  margin: 0 auto;
+  margin: 10px auto;
   background: #fff;
-  padding: 20px 40px;
+  padding: 15px 30px;
   border: solid 1px black;
-  margin-top: 20px;
+  min-height: 93%;
 }
 
 #content {
-  clear: both;
-  padding-top: 20px;
+  padding: 20px 20px;
+  padding-bottom: 45px;
+  
 }
 
 h1 {
-  color: #0000A0;
+  font-size: 20px;
+  text-align: center;
 }
 
-li {
-  color: purple;
+label {
+  
 }
